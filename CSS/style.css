@@ -1,0 +1,94 @@
+:root{
+    --fuentePrincipal: Arial;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*1 rem = 10 px*/
+    ;
+}
+
+*, *:before, *:after{
+        box-sizing: inherit;
+    }
+/* GLOBALES*/
+body{
+    font-family: var(--fuentePrincipal);
+    font-size: 13px;
+}
+.contenedor{
+    max-width: 150rem;
+    width: 90%;
+    height: 70rem;
+    margin: 0 auto;
+
+    /*outline: 2px solid black;*/
+}
+h1, h2{
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 3rem;
+    margin: 0;
+}
+
+.c1{ background-color: green; }
+.c2{ background-color: white; }
+.c3{ background-color: pink; }
+.c4{ background-color: yellow; }
+.c5{ background-color: greenyellow; }
+.c6{ background-color: gold; }
+.c7{ background-color: aqua; }
+.c8{ background-color: blue; }
+.c9{ background-color: purple; }
+.c10{ background-color: palevioletred; }
+.c11{ background-color: red; }
+.c12{ background-color: olive; }
+.c13{ background-color: orangered; }
+.c14{ background-color: brown; }
+
+.elemento--titulo{
+    border-radius: 10px 10px 0 0; 
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+/* GRID CANVA */
+.canva{
+    display: grid;
+
+    grid-template-areas: "a a b c c"
+                         "d e h i k"
+                         "d f h i k"
+                         "d g h j k"
+                         "l l m n n";
+    gap: 1rem;
+}
+
+.elemento1{ grid-area: a; }
+.elemento2{ grid-area: b; }
+.elemento3{ grid-area: c; }
+.elemento4{ grid-area: d; }
+.elemento5{ grid-area: e; }
+.elemento6{ grid-area: f; }
+.elemento7{ grid-area: g; }
+.elemento8{ grid-area: h; }
+.elemento9{ grid-area: i; }
+.elemento10{ grid-area: j; }
+.elemento11{ grid-area: k; }
+.elemento12{ grid-area: l; }
+.elemento13{ grid-area: m; }
+.elemento14{ grid-area: n; }
+
+.elemento1, .elemento2, .elemento3, .elemento4, .elemento5, .elemento6,
+.elemento7, .elemento8, .elemento9, .elemento10, .elemento11, .elemento12, 
+.elemento13, .elemento14{
+    border-radius: 10px;
+    outline: 1px solid black;
+}
+
+.elemento1--texto{
+   width: 100%;
+   padding: 1rem;
+}
