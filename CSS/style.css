@@ -31,12 +31,18 @@ h1, h2{
     line-height: 3rem;
     margin: 0;
 }
+img{
+    max-width: 30px;
+}
+.texto--negrita{
+    font-weight: bold;
+}
 
 .c1{ background-color: green; }
 .c2{ background-color: white; }
 .c3{ background-color: pink; }
 .c4{ background-color: yellow; }
-.c5{ background-color: greenyellow; }
+.c5{ background-color: none; }
 .c6{ background-color: gold; }
 .c7{ background-color: aqua; }
 .c8{ background-color: blue; }
@@ -44,8 +50,11 @@ h1, h2{
 .c10{ background-color: palevioletred; }
 .c11{ background-color: red; }
 .c12{ background-color: olive; }
-.c13{ background-color: orangered; }
-.c14{ background-color: brown; }
+/* .c13{ background-color: orangered; }
+.c14{ background-color: brown; } */
+.c15{ background-color: brown; }
+.c16{ background-color: orangered; }
+.c17{ background-color: magenta; }
 
 .elemento--titulo{
     border-radius: 10px 10px 0 0; 
@@ -70,25 +79,60 @@ h1, h2{
 .elemento2{ grid-area: b; }
 .elemento3{ grid-area: c; }
 .elemento4{ grid-area: d; }
-.elemento5{ grid-area: e; }
-.elemento6{ grid-area: f; }
-.elemento7{ grid-area: g; }
-.elemento8{ grid-area: h; }
-.elemento9{ grid-area: i; }
-.elemento10{ grid-area: j; }
-.elemento11{ grid-area: k; }
-.elemento12{ grid-area: l; }
-.elemento13{ grid-area: m; }
-.elemento14{ grid-area: n; }
+.elemento6{ grid-area: e; }
+.elemento7{ grid-area: f; }
+.elemento8{ grid-area: g; }
+.elemento9{ grid-area: h; }
+.elemento10{ grid-area: i; }
+.elemento11{ grid-area: j; }
+.elemento12{ grid-area: k; }
+.elemento15{ grid-area: l; }
+.elemento16{ grid-area: m; }
+.elemento17{ grid-area: n; }
 
 .elemento1, .elemento2, .elemento3, .elemento4, .elemento5, .elemento6,
 .elemento7, .elemento8, .elemento9, .elemento10, .elemento11, .elemento12, 
-.elemento13, .elemento14{
+.elemento13, .elemento14, .elemento15, .elemento16, .elemento17{
     border-radius: 10px;
     outline: 1px solid black;
 }
 
-.elemento1--texto{
-   width: 100%;
-   padding: 1rem;
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.textarea{
+    border: none;
+}
+
+.tooltip{
+    color: gray;
+    position: relative;
+}
+.tooltip:hover .tooltip-box{
+    display: inline-block;
+    line-height: 1.5rem;
+}
+.tooltip-box{
+    display: none;
+    position: absolute;
+    width: 750%;
+    background-color: white;
+    line-height: 10px;
+    text-align: center;
+    color: gray;
+    padding: 5px 6px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px gray;
+
+    left: -190px;
+    top: 40px;
+}
+
+.elemento--texto{
+    width: 100%;
+    height: 50px;
+    resize: none;
+    border: none;
 }
