@@ -137,6 +137,14 @@ img{
     border: none;
 }
 
+.areaTexto{
+    width: 30rem;
+    height: 20rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+    resize: none;
+    padding: 1rem;
+}
 /* Botón agregar */
 
 .agregar_info{
@@ -145,6 +153,11 @@ img{
     display: inline-block;
     transition: background-color .3s;
     cursor: pointer;
+}
+
+.img--agregar{
+    max-width: 25px;
+    padding-top: 3px;
 }
 
 /* Ventana modal */
