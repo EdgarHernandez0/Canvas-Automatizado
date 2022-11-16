@@ -18,7 +18,10 @@
         <div class="canva contenedor">
             <div class="elemento1">
                 <div class="elemento--titulo c1 flex">
-                    <div></div>
+                    <!-- Agregar información -->
+                    <picture class="agregar_info">
+                        <img src="img/agregar.png" alt="Agregar">
+                    </picture>
                     <h1>Objetivo</h1>
                     <picture class="tooltip">
                         <img src="img/pregunta.png" alt="Help">
@@ -26,10 +29,42 @@
                         <span class="tooltip-box">¿Cuál es el objetivo que se desea alcanzar colectivamente a través del proyecto?</span>
                     </picture>
                 </div>
+                    <!-- Respuesta del usuario -->
+                    <div class="info-guardada">
+                        <h3 id="respuesta_obj"></h3>
+                    </div>
             </div>
+
+    <!-- Ventana modal -->
+    <section class="modal ">
+        <div class="modal_container">
+            <div class="modal_form">
+                <div class="modal_cerrar">
+                    <a href="#" class="modal_close">
+                        <img src="img/cerrar_icono.png" alt="Cerrar" width="15px" height="15px">
+                    </a>
+                </div>
+                <h1>Objetivo</h1>
+                    <ol>
+                        <li>¿Cuál es el objetivo que se desea alcanzar colectivamente a través del proyecto?</li>
+                    </ol>
+                <form method="dialog" id="form_obj">
+                    <h4>Descripción:</h4> 
+                    <textarea id="descripcion_obj" name="description"></textarea>
+                    <br>
+                    <br>
+                    <button type="submit" class="modal_agregar">Agregar</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
             <div class="elemento2">
                 <div class="elemento--titulo c2 flex">
+                    <!-- Agregar información -->
+                    <picture class="agregar_info">
+                        <img src="img/agregar.png" alt="Agregar">
+                    </picture>
                     <h1>Visión utópica</h1>
                     <picture class="tooltip">
                         <img src="img/pregunta.png" alt="Help">
@@ -37,11 +72,42 @@
                         <span class="tooltip-box">¿Qué es lo que nos motiva a realizar el proyecto?</span>
                     </picture>
                 </div>
+                <!-- Respuesta del usuario -->
+                <div class="info-guardada">
+                    <h3 id="respuesta_vis"></h3>
+                </div>
             </div>
+
+    <!-- Ventana modal -->
+    <section class="modal ">
+        <div class="modal_container">
+            <div class="modal_form">
+                <div class="modal_cerrar">
+                    <a href="#" class="modal_close">
+                        <img src="img/cerrar_icono.png" alt="Cerrar" width="15px" height="15px">
+                    </a>
+                </div>
+                <h1>Visión utópica</h1>
+                    <ol>
+                        <li>¿Qué es lo que nos motiva a realizar el proyecto?</li>
+                    </ol>
+                <form method="dialog" id="form_vis">
+                    <h4>Descripción:</h4> 
+                    <textarea id="descripcion_vis" name="descripcion"></textarea>
+                    <br>
+                    <br>
+                    <button type="submit" class="modal_agregar">Agregar</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
             <div class="elemento3">
                 <div class="elemento--titulo c3 flex">
-                    <div></div>
+                    <!-- Agregar información -->
+                    <picture class="agregar_info">
+                        <img src="img/agregar.png" alt="Agregar">
+                    </picture>
                     <h1>Impacto</h1>
                     <picture class="tooltip">
                         <img src="img/pregunta.png" alt="Help">
@@ -53,6 +119,9 @@
 
             <div class="elemento4">
                 <div class="elemento--titulo c4 flex">
+                    <picture class="agregar_info">
+                        <img src="img/agregar.png" alt="Agregar">
+                    </picture>
                     <h1>Problema/Necesidad</h1>
                     <picture class="tooltip">
                         <img src="img/pregunta.png" alt="Help">
@@ -65,6 +134,10 @@
                 </div>
 
                 <div class="elemento--titulo c5 flex">
+                    <!-- Agregar información -->
+                    <picture class="agregar_info">
+                        <img src="img/agregar.png" alt="Agregar">
+                    </picture>
                     <h1>Alternativas existentes</h1>
                     <picture class="tooltip">
                         <img src="img/pregunta.png" alt="Help">
@@ -76,6 +149,10 @@
 
             <div class="elemento6">
                 <div class="elemento--titulo c6 flex">
+                    <!-- Agregar información -->
+                    <picture class="agregar_info">
+                        <img src="img/agregar.png" alt="Agregar">
+                    </picture>
                     <h1>Actividades clave</h1>
                     <picture class="tooltip">
                         <img src="img/pregunta.png" alt="Help">
@@ -87,6 +164,10 @@
 
             <div class="elemento7">
                 <div class="elemento--titulo c7 flex">
+                    <!-- Agregar información -->
+                    <picture class="agregar_info">
+                        <img src="img/agregar.png" alt="Agregar">
+                    </picture>
                     <h1>Alianzas clave</h1>
                     <picture class="tooltip">
                         <img src="img/pregunta.png" alt="Help">
@@ -98,6 +179,10 @@
 
             <div class="elemento8">
                 <div class="elemento--titulo c8 flex">
+                    <!-- Agregar información -->
+                    <picture class="agregar_info">
+                        <img src="img/agregar.png" alt="Agregar">
+                    </picture>
                     <h1>Recursos clave</h1>
                     <picture class="tooltip">
                         <img src="img/pregunta.png" alt="Help">
@@ -221,5 +306,7 @@
             </div>
         </div> <!-- Contenedor -->
     </main>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
