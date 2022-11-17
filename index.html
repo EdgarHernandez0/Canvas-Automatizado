@@ -11,12 +11,33 @@
 
 </head>
 <body>
-    <h1>Canvas automatizado</h1>
-    <h2>UPIICSA</h2>
+    <header>
+        <h1>Canvas automatizado</h1>
+        <h2>UPIICSA</h2>
+    </header>
+    
+
+    <section class="avanzarEtapa contenedorBotones flex--botones">
+        <div>
+            <button class="btn--etapa" onclick="activarSeccion1()" id="fase1">FASE 1</button>
+        </div>
+        <div>
+            <button class="btn--etapa" onclick="activarSeccion2()" id="fase2">FASE 2</button>
+        </div>
+        <div>
+            <button class="btn--etapa" onclick="activarSeccion3()" id="fase3">FASE 3</button>
+        </div>
+        <div>
+            <button class="btn--etapa" onclick="activarSeccion4()" id="fase4">FASE 4</button>
+        </div>
+        <div>
+            <button class="btn--etapa" onclick="activarSeccion5()" id="fase5">FASE 5</button>
+        </div>
+    </section>
 
     <main>
         <div class="canva contenedor">
-            <div class="elemento1">
+            <div class="elemento1" id="e1">
                 <div class="elemento--titulo c1 flex">
                     <!-- Agregar información -->
                     <picture class="agregar_info">
@@ -59,7 +80,7 @@
                 </div>
             </section>
 
-            <div class="elemento2">
+            <div class="elemento2" id="e2">
                 <div class="elemento--titulo c2 flex">
                     <!-- Agregar información -->
                     <picture class="agregar_info">
@@ -102,7 +123,7 @@
                 </div>
             </section>
 
-            <div class="elemento3">
+            <div class="elemento3" id="e3">
                 <div class="elemento--titulo c3 flex">
                     <!-- Agregar información -->
                     <picture class="agregar_info">
@@ -145,7 +166,7 @@
                 </div>
             </section>
 
-            <div class="elemento4">
+            <div class="elemento4" id="e4">
                 <div class="elemento--titulo c4 flex">
                     <!-- Agregar información -->
                     <picture class="agregar_info">
@@ -229,7 +250,7 @@
                 </div>
             </section>
 
-            <div class="elemento6">
+            <div class="elemento6" id="e6">
                 <div class="elemento--titulo c6 flex">
                     <!-- Agregar información -->
                     <picture class="agregar_info">
@@ -271,7 +292,7 @@
                 </div>
             </section>
 
-            <div class="elemento7">
+            <div class="elemento7" id="e7">
                 <div class="elemento--titulo c7 flex">
                     <!-- Agregar información -->
                     <picture class="agregar_info">
@@ -314,7 +335,7 @@
                 </div>
             </section>
 
-            <div class="elemento8">
+            <div class="elemento8" id="e8">
                 <div class="elemento--titulo c8 flex">
                     <!-- Agregar información -->
                     <picture class="agregar_info">
@@ -357,7 +378,7 @@
                 </div>
             </section>
 
-            <div class="elemento9">
+            <div class="elemento9" id="e9">
                 <div class="elemento--titulo c9 flex">
                     <!-- Agregar información -->
                     <picture class="agregar_info">
@@ -404,7 +425,7 @@
                 </div>
             </section>
 
-            <div class="elemento10">
+            <div class="elemento10" id="e10">
                 <div class="elemento--titulo c10 flex">
                     <!-- Agregar información -->
                     <picture class="agregar_info">
@@ -449,7 +470,7 @@
                 </div>
             </section>
 
-            <div class="elemento11">
+            <div class="elemento11" id="e11">
                 <div class="elemento--titulo c11 flex">
                     <!-- Agregar información -->
                     <picture class="agregar_info">
@@ -494,7 +515,7 @@
                 </div>
             </section>
 
-            <div class="elemento12">
+            <div class="elemento12" id="e12">
                 <div class="elemento--titulo c12 flex">
                     <!-- Agregar información -->
                     <picture class="agregar_info">
@@ -619,7 +640,7 @@
                 </div>
             </section>
 
-            <div class="elemento15">
+            <div class="elemento15" id="e15">
                 <div class="elemento--titulo c15 flex">
                     <!-- Agregar información -->
                     <picture class="agregar_info">
@@ -664,7 +685,7 @@
                 </div>
             </section>
 
-            <div class="elemento16">
+            <div class="elemento16" id="e16">
                 <div class="elemento--titulo c16 flex">
                     <!-- Agregar información -->
                     <picture class="agregar_info">
@@ -709,7 +730,7 @@
                 </div>
             </section>
 
-            <div class="elemento17">
+            <div class="elemento17" id="e17">
                 <div class="elemento--titulo c17 flex">
                     <!-- Agregar información -->
                     <picture class="agregar_info">
@@ -758,5 +779,6 @@
     </main>
 
     <script src="js/main.js"></script>
+    <script src="js/secciones.js"></script>
 </body>
 </html>
