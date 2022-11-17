@@ -35,7 +35,7 @@
                     </div>
             </div>
 
-            <!-- Ventana modal -->
+            <!-- Ventana modal OBJETIVO -->
             <section class="modal ">
                 <div class="modal_container">
                     <div class="modal_form">
@@ -78,29 +78,29 @@
                 </div>
             </div>
 
-                <!-- Ventana modal -->
-                <section class="modal ">
-                    <div class="modal_container">
-                        <div class="modal_form">
-                            <div class="modal_cerrar">
-                                <a href="#" class="modal_close">
-                                    <img src="img/cerrar_icono.png" alt="Cerrar" width="15px" height="15px">
-                                </a>
-                            </div>
-                            <h1>Visión utópica</h1>
-                                <ol>
-                                    <li>¿Qué es lo que nos motiva a realizar el proyecto?</li>
-                                </ol>
-                            <form method="dialog" id="form_vis">
-                                <h4>Descripción:</h4> 
-                                <textarea id="descripcion_vis" name="descripcion"></textarea>
-                                <br>
-                                <br>
-                                <button type="submit" class="modal_agregar">Agregar</button>
-                            </form>
+            <!-- Ventana modal VISION UTOPICA -->
+            <section class="modal ">
+                <div class="modal_container">
+                    <div class="modal_form">
+                        <div class="modal_cerrar">
+                            <a href="#" class="modal_close">
+                                <img src="img/cerrar_icono.png" alt="Cerrar" width="15px" height="15px">
+                            </a>
                         </div>
+                        <h1>Visión utópica</h1>
+                            <ol>
+                                <li>¿Qué es lo que nos motiva a realizar el proyecto?</li>
+                            </ol>
+                        <form method="dialog" id="form_vis">
+                            <h4>Descripción:</h4> 
+                            <textarea id="descripcion_vis" name="description" class="areaTexto" maxlength="100"></textarea>
+                            <br>
+                            <br>
+                            <button type="submit" class="modal_agregar">Agregar</button>
+                        </form>
                     </div>
-                </section>
+                </div>
+            </section>
 
             <div class="elemento3">
                 <div class="elemento--titulo c3 flex">
@@ -115,7 +115,35 @@
                         <span class="tooltip-box">¿Qué impactos positivos y negativos tanto <span class="texto--negrita">sociales, ecológicos y económicos</span> se van a generar?</span>
                     </picture>
                 </div>
+                <!-- Respuesta del usuario -->
+                <div class="info-guardada">
+                    <h3 id="respuesta_impacto"></h3>
+                </div>
             </div>
+
+            <!-- Ventana modal IMPACTO -->
+            <section class="modal ">
+                <div class="modal_container">
+                    <div class="modal_form">
+                        <div class="modal_cerrar">
+                            <a href="#" class="modal_close">
+                                <img src="img/cerrar_icono.png" alt="Cerrar" width="15px" height="15px">
+                            </a>
+                        </div>
+                        <h1>Impacto</h1>
+                            <ol>
+                                <li>¿Qué impactos positivos y negativos tanto <span class="texto--negrita">sociales, ecológicos y económicos</span> se van a generar?</li>
+                            </ol>
+                        <form method="dialog" id="form_impacto">
+                            <h4>Descripción:</h4> 
+                            <textarea id="descripcion_impacto" name="description" class="areaTexto" maxlength="100"></textarea>
+                            <br>
+                            <br>
+                            <button type="submit" class="modal_agregar">Agregar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
 
             <div class="elemento4">
                 <div class="elemento--titulo c4 flex">
@@ -130,8 +158,9 @@
                         <span class="tooltip-box">¿Cuál es el problema o necesidad que se está trabajando?</span>
                     </picture>
                 </div>
-                <div>
-                    <textarea class="elemento--texto" rows="10"></textarea>
+                <!-- Respuesta del usuario -->
+                <div class="info-guardada">
+                    <h3 id="respuesta_problema"></h3>
                 </div>
 
                 <div class="elemento--titulo c5 flex">
@@ -146,7 +175,59 @@
                         <span class="tooltip-box">¿Qué alternativas existen que no terminan por resolver el problema?</span>
                     </picture>
                 </div>
+                <!-- Respuesta del usuario -->
+                <div class="info-guardada">
+                    <h3 id="respuesta_alternativas"></h3>
+                </div>
             </div>
+
+            <!-- Ventana modal PROBLEMA NECESIDAD -->
+            <section class="modal ">
+                <div class="modal_container">
+                    <div class="modal_form">
+                        <div class="modal_cerrar">
+                            <a href="#" class="modal_close">
+                                <img src="img/cerrar_icono.png" alt="Cerrar" width="15px" height="15px">
+                            </a>
+                        </div>
+                        <h1>Problema/Necesidad</h1>
+                            <ol>
+                                <li>¿Cuál es el problema o necesidad que se está trabajando?</li>
+                            </ol>
+                        <form method="dialog" id="form_problema">
+                            <h4>Descripción:</h4> 
+                            <textarea id="descripcion_problema" name="description" class="areaTexto" maxlength="100"></textarea>
+                            <br>
+                            <br>
+                            <button type="submit" class="modal_agregar">Agregar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ventana modal ALTERNATIVAS EXISTENTES -->
+            <section class="modal ">
+                <div class="modal_container">
+                    <div class="modal_form">
+                        <div class="modal_cerrar">
+                            <a href="#" class="modal_close">
+                                <img src="img/cerrar_icono.png" alt="Cerrar" width="15px" height="15px">
+                            </a>
+                        </div>
+                        <h1>Alternativas existentes</h1>
+                            <ol>
+                                <li>¿Qué alternativas existen que no terminan por resolver el problema?</li>
+                            </ol>
+                        <form method="dialog" id="form_alternativas">
+                            <h4>Descripción:</h4> 
+                            <textarea id="descripcion_alternativas" name="description" class="areaTexto" maxlength="100"></textarea>
+                            <br>
+                            <br>
+                            <button type="submit" class="modal_agregar">Agregar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
 
             <div class="elemento6">
                 <div class="elemento--titulo c6 flex">
@@ -160,7 +241,35 @@
                         <span class="tooltip-box">¿Qué actividades son las más importantes para realizar el en proyecto?</span>
                     </picture>
                 </div>
+                <!-- Respuesta del usuario -->
+                <div class="info-guardada">
+                    <h3 id="respuesta_actividades"></h3>
+                </div>
             </div>
+
+            <!-- Ventana modal ACTIVIDADES CLAVE -->
+            <section class="modal ">
+                <div class="modal_container">
+                    <div class="modal_form">
+                        <div class="modal_cerrar">
+                            <a href="#" class="modal_close">
+                                <img src="img/cerrar_icono.png" alt="Cerrar" width="15px" height="15px">
+                            </a>
+                        </div>
+                        <h1>Actividades clave</h1>
+                            <ol>
+                                <li>¿Qué actividades son las más importantes para realizar el en proyecto?</li>
+                            </ol>
+                        <form method="dialog" id="form_actividades">
+                            <h4>Descripción:</h4> 
+                            <textarea id="descripcion_actividades" name="description" class="areaTexto" maxlength="100"></textarea>
+                            <br>
+                            <br>
+                            <button type="submit" class="modal_agregar">Agregar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
 
             <div class="elemento7">
                 <div class="elemento--titulo c7 flex">
@@ -175,7 +284,35 @@
                         <span class="tooltip-box">¿Qué personas, organizaciones o grupos son importantes para desarrollar el proyecto?</span>
                     </picture>
                 </div>
+                <!-- Respuesta del usuario -->
+                <div class="info-guardada">
+                    <h3 id="respuesta_alianzas"></h3>
+                </div>
             </div>
+
+            <!-- Ventana modal ALIANZAS CLAVE -->
+            <section class="modal ">
+                <div class="modal_container">
+                    <div class="modal_form">
+                        <div class="modal_cerrar">
+                            <a href="#" class="modal_close">
+                                <img src="img/cerrar_icono.png" alt="Cerrar" width="15px" height="15px">
+                            </a>
+                        </div>
+                        <h1>Alianzas clave</h1>
+                            <ol>
+                                <li>¿Qué personas, organizaciones o grupos son importantes para desarrollar el proyecto?</li>
+                            </ol>
+                        <form method="dialog" id="form_alianzas">
+                            <h4>Descripción:</h4> 
+                            <textarea id="descripcion_alianzas" name="description" class="areaTexto" maxlength="100"></textarea>
+                            <br>
+                            <br>
+                            <button type="submit" class="modal_agregar">Agregar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
 
             <div class="elemento8">
                 <div class="elemento--titulo c8 flex">
@@ -190,7 +327,35 @@
                         <span class="tooltip-box">¿Cuáles son los recursos, bienes y talentos sin los cuales no se puede echar a andar el proyecto?</span>
                     </picture>
                 </div>
+                <!-- Respuesta del usuario -->
+                <div class="info-guardada">
+                    <h3 id="respuesta_recursos"></h3>
+                </div>
             </div>
+
+            <!-- Ventana modal RECURSOS CLAVE -->
+            <section class="modal ">
+                <div class="modal_container">
+                    <div class="modal_form">
+                        <div class="modal_cerrar">
+                            <a href="#" class="modal_close">
+                                <img src="img/cerrar_icono.png" alt="Cerrar" width="15px" height="15px">
+                            </a>
+                        </div>
+                        <h1>Recursos clave</h1>
+                            <ol>
+                                <li>¿Cuáles son los recursos, bienes y talentos sin los cuales no se puede echar a andar el proyecto?</li>
+                            </ol>
+                        <form method="dialog" id="form_recursos">
+                            <h4>Descripción:</h4> 
+                            <textarea id="descripcion_recursos" name="description" class="areaTexto" maxlength="100"></textarea>
+                            <br>
+                            <br>
+                            <button type="submit" class="modal_agregar">Agregar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
 
             <div class="elemento9">
                 <div class="elemento--titulo c9 flex">
@@ -207,7 +372,37 @@
                                                   ¿Qué valor está generando para la comunidad?</span>
                     </picture>
                 </div>
+                <!-- Respuesta del usuario -->
+                <div class="info-guardada">
+                    <h3 id="respuesta_propuesta"></h3>
+                </div>
             </div>
+
+            <!-- Ventana modal PROPUESTA DE VALOR  -->
+            <section class="modal ">
+                <div class="modal_container">
+                    <div class="modal_form">
+                        <div class="modal_cerrar">
+                            <a href="#" class="modal_close">
+                                <img src="img/cerrar_icono.png" alt="Cerrar" width="15px" height="15px">
+                            </a>
+                        </div>
+                        <h1>Propuesta de valor</h1>
+                            <ol>
+                                <li>¿En qué consiste la solución propuesta?</li>
+                                <li>¿Qué diferencias tiene respecto a las alternitas existentes?</li>
+                                <li>¿Qué valor está generando para la comunidad?</li>
+                            </ol>
+                        <form method="dialog" id="form_propuesta">
+                            <h4>Descripción:</h4> 
+                            <textarea id="descripcion_propuesta" name="description" class="areaTexto" maxlength="100"></textarea>
+                            <br>
+                            <br>
+                            <button type="submit" class="modal_agregar">Agregar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
 
             <div class="elemento10">
                 <div class="elemento--titulo c10 flex">
@@ -223,7 +418,36 @@
                                                 ¿Cómo se mantendrán informados a los usuarios, clientes y beneficiarios del proyecto? </span>
                     </picture>
                 </div>
+                <!-- Respuesta del usuario -->
+                <div class="info-guardada">
+                    <h3 id="respuesta_comunicacion"></h3>
+                </div>
             </div>
+
+            <!-- Ventana modal C. COMUNICACION  -->
+            <section class="modal ">
+                <div class="modal_container">
+                    <div class="modal_form">
+                        <div class="modal_cerrar">
+                            <a href="#" class="modal_close">
+                                <img src="img/cerrar_icono.png" alt="Cerrar" width="15px" height="15px">
+                            </a>
+                        </div>
+                        <h1>C. Comunicación</h1>
+                            <ol>
+                                <li>¿Qué medios se utilizarán para dar a conocer el proyecto o solución entre la población?</li>
+                                <li>¿Cómo se mantendrán informados a los usuarios, clientes y beneficiarios del proyecto?</li>
+                            </ol>
+                        <form method="dialog" id="form_comunicacion">
+                            <h4>Descripción:</h4> 
+                            <textarea id="descripcion_comunicacion" name="description" class="areaTexto" maxlength="100"></textarea>
+                            <br>
+                            <br>
+                            <button type="submit" class="modal_agregar">Agregar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
 
             <div class="elemento11">
                 <div class="elemento--titulo c11 flex">
@@ -239,7 +463,36 @@
                                                   ¿Cómo accederán los usuarios a la solución?</span>
                     </picture>
                 </div>
+                <!-- Respuesta del usuario -->
+                <div class="info-guardada">
+                    <h3 id="respuesta_distribucion"></h3>
+                </div>
             </div>
+
+            <!-- Ventana modal C. DISTRIBUCION  -->
+            <section class="modal ">
+                <div class="modal_container">
+                    <div class="modal_form">
+                        <div class="modal_cerrar">
+                            <a href="#" class="modal_close">
+                                <img src="img/cerrar_icono.png" alt="Cerrar" width="15px" height="15px">
+                            </a>
+                        </div>
+                        <h1>C. Distribución</h1>
+                            <ol>
+                                <li>¿En qué lugares se tiene pensado ofrecer el producto, servicio o solución?</li>
+                                <li>¿Cómo accederán los usuarios a la solución?</li>
+                            </ol>
+                        <form method="dialog" id="form_distribucion">
+                            <h4>Descripción:</h4> 
+                            <textarea id="descripcion_distribucion" name="description" class="areaTexto" maxlength="100"></textarea>
+                            <br>
+                            <br>
+                            <button type="submit" class="modal_agregar">Agregar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
 
             <div class="elemento12">
                 <div class="elemento--titulo c12 flex">
@@ -254,8 +507,9 @@
                         <span class="tooltip-box">¿Quiénes son las personas que estarán relacionadas con la solución? </span>
                     </picture>
                 </div>
-                <div>
-                    <textarea class="elemento--texto" rows="10"></textarea>
+                <!-- Respuesta del usuario -->
+                <div class="info-guardada">
+                    <h3 id="respuesta_usuarios"></h3>
                 </div>
             
                 <div class="elemento--titulo flex">
@@ -270,8 +524,9 @@
                         <span class="tooltip-box">¿Quiénes son las personas que, de ser el caso, van a adquirir o pagar por esa solución?</span>
                     </picture>
                 </div>
-                <div>
-                    <textarea class="elemento--texto" rows="10"></textarea>
+                <!-- Respuesta del usuario -->
+                <div class="info-guardada">
+                    <h3 id="respuesta_clientes"></h3>
                 </div>
             
                 <div class="elemento--titulo flex">
@@ -286,10 +541,83 @@
                         <span class="tooltip-box">¿Quiénes son las personas que en su conjunto se benefician del proyecto?</span>
                     </picture>
                 </div>
-                <div>
-                    <textarea class="elemento--texto" rows="10"></textarea>
+                <!-- Respuesta del usuario -->
+                <div class="info-guardada">
+                    <h3 id="respuesta_beneficiarios"></h3>
                 </div>
             </div>
+
+            <!-- Ventana modal USUARIOS  -->
+            <section class="modal ">
+                <div class="modal_container">
+                    <div class="modal_form">
+                        <div class="modal_cerrar">
+                            <a href="#" class="modal_close">
+                                <img src="img/cerrar_icono.png" alt="Cerrar" width="15px" height="15px">
+                            </a>
+                        </div>
+                        <h1></h1>
+                            <ol>
+                                <li>¿Quiénes son las personas que estarán relacionadas con la solución?</li>
+                            </ol>
+                        <form method="dialog" id="form_usuarios">
+                            <h4>Descripción:</h4> 
+                            <textarea id="descripcion_usuarios" name="description" class="areaTexto" maxlength="100"></textarea>
+                            <br>
+                            <br>
+                            <button type="submit" class="modal_agregar">Agregar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ventana modal CLIENTES  -->
+            <section class="modal ">
+                <div class="modal_container">
+                    <div class="modal_form">
+                        <div class="modal_cerrar">
+                            <a href="#" class="modal_close">
+                                <img src="img/cerrar_icono.png" alt="Cerrar" width="15px" height="15px">
+                            </a>
+                        </div>
+                        <h1>Clientes</h1>
+                            <ol>
+                                <li>¿Quiénes son las personas que, de ser el caso, van a adquirir o pagar por esa solución?</li>
+                            </ol>
+                        <form method="dialog" id="form_clientes">
+                            <h4>Descripción:</h4> 
+                            <textarea id="descripcion_clientes" name="description" class="areaTexto" maxlength="100"></textarea>
+                            <br>
+                            <br>
+                            <button type="submit" class="modal_agregar">Agregar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ventana modal BENEFICIARIOS  -->
+            <section class="modal ">
+                <div class="modal_container">
+                    <div class="modal_form">
+                        <div class="modal_cerrar">
+                            <a href="#" class="modal_close">
+                                <img src="img/cerrar_icono.png" alt="Cerrar" width="15px" height="15px">
+                            </a>
+                        </div>
+                        <h1>Beneficiarios</h1>
+                            <ol>
+                                <li>¿Quiénes son las personas que en su conjunto se benefician del proyecto?</li>
+                            </ol>
+                        <form method="dialog" id="form_beneficiarios">
+                            <h4>Descripción:</h4> 
+                            <textarea id="descripcion_beneficiarios" name="description" class="areaTexto" maxlength="100"></textarea>
+                            <br>
+                            <br>
+                            <button type="submit" class="modal_agregar">Agregar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
 
             <div class="elemento15">
                 <div class="elemento--titulo c15 flex">
@@ -305,7 +633,36 @@
                                                   ¿Cuál es la cantidad que se tendrá que desembolsar en un año para sostener el proyecto?</span>
                     </picture>
                 </div>
+                <!-- Respuesta del usuario -->
+                <div class="info-guardada">
+                    <h3 id="respuesta_estructura"></h3>
+                </div>
             </div>
+
+            <!-- Ventana modal ESTRUCTURA DE COSTOS  -->
+            <section class="modal ">
+                <div class="modal_container">
+                    <div class="modal_form">
+                        <div class="modal_cerrar">
+                            <a href="#" class="modal_close">
+                                <img src="img/cerrar_icono.png" alt="Cerrar" width="15px" height="15px">
+                            </a>
+                        </div>
+                        <h1>Estructura de costos</h1>
+                            <ol>
+                                <li>¿Qué actividades generarán un desembolso para el proyecto?</li>
+                                <li>¿Cuál es la cantidad que se tendrá que desembolsar en un año para sostener el proyecto?</li>
+                            </ol>
+                        <form method="dialog" id="form_estructura">
+                            <h4>Descripción:</h4> 
+                            <textarea id="descripcion_estructura" name="description" class="areaTexto" maxlength="100"></textarea>
+                            <br>
+                            <br>
+                            <button type="submit" class="modal_agregar">Agregar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
 
             <div class="elemento16">
                 <div class="elemento--titulo c16 flex">
@@ -321,7 +678,36 @@
                                                   En caso de que se generen otros excedentes (materia prima, materiales, alimentos, insumos, etc.) ¿Qué se piensa hacer con ellos?  </span>
                     </picture>
                 </div>
+                <!-- Respuesta del usuario -->
+                <div class="info-guardada">
+                    <h3 id="respuesta_excedentes"></h3>
+                </div>
             </div>
+
+            <!-- Ventana modal C. EXCEDENTES  -->
+            <section class="modal ">
+                <div class="modal_container">
+                    <div class="modal_form">
+                        <div class="modal_cerrar">
+                            <a href="#" class="modal_close">
+                                <img src="img/cerrar_icono.png" alt="Cerrar" width="15px" height="15px">
+                            </a>
+                        </div>
+                        <h1>Excedentes</h1>
+                            <ol>
+                                <li>¿Qué se piensa hacer con los excedentes económicos?</li>
+                                <li>En caso de que se generen otros excedentes (materia prima, materiales, alimentos, insumos, etc.) ¿Qué se piensa hacer con ellos?</li>
+                            </ol>
+                        <form method="dialog" id="form_excedentes">
+                            <h4>Descripción:</h4> 
+                            <textarea id="descripcion_excedentes" name="description" class="areaTexto" maxlength="100"></textarea>
+                            <br>
+                            <br>
+                            <button type="submit" class="modal_agregar">Agregar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
 
             <div class="elemento17">
                 <div class="elemento--titulo c17 flex">
@@ -337,7 +723,37 @@
                                                   ¿Cuál es la cantidad de ingresos que se estiman generar en un año? </span>
                     </picture>
                 </div>
+                <!-- Respuesta del usuario -->
+                <div class="info-guardada">
+                    <h3 id="respuesta_fuentes"></h3>
+                </div>
             </div>
+
+            <!-- Ventana modal FUENTES DE INGRESOS  -->
+            <section class="modal ">
+                <div class="modal_container">
+                    <div class="modal_form">
+                        <div class="modal_cerrar">
+                            <a href="#" class="modal_close">
+                                <img src="img/cerrar_icono.png" alt="Cerrar" width="15px" height="15px">
+                            </a>
+                        </div>
+                        <h1>Fuentes de ingresos</h1>
+                            <ol>
+                                <li>¿Qué actividades generarán ingresos para el proyecto?</li>
+                                <li>¿Cuál es la cantidad de ingresos que se estiman generar en un año?</li>
+                            </ol>
+                        <form method="dialog" id="form_fuentes">
+                            <h4>Descripción:</h4> 
+                            <textarea id="descripcion_fuentes" name="description" class="areaTexto" maxlength="100"></textarea>
+                            <br>
+                            <br>
+                            <button type="submit" class="modal_agregar">Agregar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
         </div> <!-- Contenedor -->
     </main>
 
