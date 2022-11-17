@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Canvas</title>
 
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/style.css">
@@ -35,29 +35,29 @@
                     </div>
             </div>
 
-    <!-- Ventana modal -->
-    <section class="modal ">
-        <div class="modal_container">
-            <div class="modal_form">
-                <div class="modal_cerrar">
-                    <a href="#" class="modal_close">
-                        <img src="img/cerrar_icono.png" alt="Cerrar" width="15px" height="15px">
-                    </a>
+            <!-- Ventana modal -->
+            <section class="modal ">
+                <div class="modal_container">
+                    <div class="modal_form">
+                        <div class="modal_cerrar">
+                            <a href="#" class="modal_close">
+                                <img src="img/cerrar_icono.png" alt="Cerrar" width="15px" height="15px">
+                            </a>
+                        </div>
+                        <h1>Objetivo</h1>
+                            <ol>
+                                <li>¿Cuál es el objetivo que se desea alcanzar colectivamente a través del proyecto?</li>
+                            </ol>
+                        <form method="dialog" id="form_obj">
+                            <h4>Descripción:</h4> 
+                            <textarea id="descripcion_obj" name="description" class="areaTexto" maxlength="100"></textarea>
+                            <br>
+                            <br>
+                            <button type="submit" class="modal_agregar">Agregar</button>
+                        </form>
+                    </div>
                 </div>
-                <h1>Objetivo</h1>
-                    <ol>
-                        <li>¿Cuál es el objetivo que se desea alcanzar colectivamente a través del proyecto?</li>
-                    </ol>
-                <form method="dialog" id="form_obj">
-                    <h4>Descripción:</h4> 
-                    <textarea id="descripcion_obj" name="description" class="areaTexto" maxlength="100"></textarea>
-                    <br>
-                    <br>
-                    <button type="submit" class="modal_agregar">Agregar</button>
-                </form>
-            </div>
-        </div>
-    </section>
+            </section>
 
             <div class="elemento2">
                 <div class="elemento--titulo c2 flex">
@@ -78,29 +78,29 @@
                 </div>
             </div>
 
-    <!-- Ventana modal -->
-    <section class="modal ">
-        <div class="modal_container">
-            <div class="modal_form">
-                <div class="modal_cerrar">
-                    <a href="#" class="modal_close">
-                        <img src="img/cerrar_icono.png" alt="Cerrar" width="15px" height="15px">
-                    </a>
-                </div>
-                <h1>Visión utópica</h1>
-                    <ol>
-                        <li>¿Qué es lo que nos motiva a realizar el proyecto?</li>
-                    </ol>
-                <form method="dialog" id="form_vis">
-                    <h4>Descripción:</h4> 
-                    <textarea id="descripcion_vis" name="descripcion"></textarea>
-                    <br>
-                    <br>
-                    <button type="submit" class="modal_agregar">Agregar</button>
-                </form>
-            </div>
-        </div>
-    </section>
+                <!-- Ventana modal -->
+                <section class="modal ">
+                    <div class="modal_container">
+                        <div class="modal_form">
+                            <div class="modal_cerrar">
+                                <a href="#" class="modal_close">
+                                    <img src="img/cerrar_icono.png" alt="Cerrar" width="15px" height="15px">
+                                </a>
+                            </div>
+                            <h1>Visión utópica</h1>
+                                <ol>
+                                    <li>¿Qué es lo que nos motiva a realizar el proyecto?</li>
+                                </ol>
+                            <form method="dialog" id="form_vis">
+                                <h4>Descripción:</h4> 
+                                <textarea id="descripcion_vis" name="descripcion"></textarea>
+                                <br>
+                                <br>
+                                <button type="submit" class="modal_agregar">Agregar</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
 
             <div class="elemento3">
                 <div class="elemento--titulo c3 flex">
@@ -223,8 +223,8 @@
                                                 ¿Cómo se mantendrán informados a los usuarios, clientes y beneficiarios del proyecto? </span>
                     </picture>
                 </div>
-                
             </div>
+
             <div class="elemento11">
                 <div class="elemento--titulo c11 flex">
                     <!-- Agregar información -->
