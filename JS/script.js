@@ -20,6 +20,7 @@ function download() {
           bar.style.width = width + "%";  // si
           percent.innerHTML = width + "%"; // si
           txt_info.textContent = "Has click en el Botón de Descarga.";
-      }   
+        }   
+      }
   }
 }
