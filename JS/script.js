@@ -20,6 +20,7 @@ function download() {
           bar.style.width = width + "%";  // si
           percent.innerHTML = width + "%"; // si
           txt_info.textContent = "Su archivo se está descargando.";
+          //así se ve mucho mejor. 
         }   
       }
   }
