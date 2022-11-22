@@ -14,12 +14,12 @@ function download() {
         if (width >= 100) {
             clearInterval(id);
             i = 0;
-            txt_info.textContent = "Su archivo ya termino su proceso de descarga.";
+            txt_info.textContent = "Descarga completa.";
         } else {
           width++;
           bar.style.width = width + "%";  // si
           percent.innerHTML = width + "%"; // si
-          txt_info.textContent = "Has click en el Botón de Descarga.";
+          txt_info.textContent = "Su archivo se está descargando.";
         }   
       }
   }
