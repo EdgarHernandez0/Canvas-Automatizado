@@ -77,9 +77,17 @@ img{
     border-bottom-style: solid;
     border-width: 1px;
 }
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: lineal-gradient(-45deg, #882BA5, #B02D9B>);
+}
+
 .center {
     width: 100%;
     height: 100vh;
+    
     
     display: flex;
     justify-content: center;
@@ -90,7 +98,7 @@ img{
     width: 360px;
     height: 160px;
     
-   background-color: #FF0000;
+   background-color: #1b1c2b;
    border-radius: 10px;
     
   display: flex;
@@ -198,7 +206,7 @@ button:hover{
     
 }
 .progress_bar_2{
-    width: 90px;
+    width: 0px;
     height: 5px;
     
     background-color: #5835ff;
