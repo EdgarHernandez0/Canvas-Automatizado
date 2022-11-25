@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!-- <script src="/script.js" defer></script> -->
     <title>Canvas</title>
 
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
 
 </head>
 <body>
@@ -41,7 +43,7 @@
     </section>
 
     <main>
-        <div class="canva contenedor">
+        <div class="canva contenedor" id="contenedor--pdf">
             <div class="elemento1" id="e1">
                 <div class="elemento--titulo c1 flex">
                     <!-- Agregar información -->
@@ -783,7 +785,14 @@
         </div> <!-- Contenedor -->
     </main>
 
+    <section class="avanzarEtapa contenedorBotones flex--botones">
+        <div>
+            <button class="btn--etapa" onclick="descargarPDF()" id="descargarPDF">Descargar PDF</button>
+        </div>
+    </section>
+
     <script src="js/main.js"></script>
     <script src="js/secciones.js"></script>
+    <script src="js/descargarPDF.js"></script>
 </body>
 </html>
