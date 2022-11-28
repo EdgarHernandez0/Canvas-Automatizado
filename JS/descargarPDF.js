@@ -1,3 +1,5 @@
+var nombreAutorLabel = document.getElementById('nombreAutorLabel').innerText;
+var nombreProyectoLabel = document.getElementById('nombreProyectoLabel').innerText;
 
 function getPDFFileButton () {
   return html2canvas($('#contenedor--pdf'), {
@@ -9,8 +11,12 @@ function getPDFFileButton () {
           var imgHeight = (canvas.height * 60) / 240;
           // jspdf changes
           var pdf = new jsPDF('l', 'mm', 'letter');
-          pdf.text("Canvas Social", 130, 15, {align: 'center'});
-          pdf.line(30, 20, 250, 20);
+          var nombreAutor = document.getElementById('nombreAutor').value;
+          var nombreProyecto = document.getElementById('nombreProyecto').value;
+          pdf.setFontSize(12);
+          pdf.text("Canvas Social", 130, 7);
+          pdf.text(nombreAutorLabel + ' ' + nombreAutor, 20, 15);
+          pdf.text(nombreProyectoLabel + ' ' + nombreProyecto, 20, 20);
           pdf.addImage(myImage, 'JPEG', 15, 25, imgWidth, imgHeight); // 2: 19
           pdf.save('CanvasSocial.pdf');
       }
