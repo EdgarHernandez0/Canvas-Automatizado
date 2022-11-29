@@ -31,6 +31,9 @@ document.querySelector('#agregar_info-Estructura').style.visibility = "hidden";
 document.querySelector('#agregar_info-Excedentes').style.visibility = "hidden";
 document.querySelector('#agregar_info-Fuentes').style.visibility = "hidden";
 
+document.getElementById('descargarPDF').style.backgroundColor = "gray";
+document.getElementById('descargarPDF').disabled = true;
+
 
 // SECCION 1
 // ACTIVAR SECCION 1
@@ -50,6 +53,7 @@ function activarSeccion1(){
     desactivarTerminado();
 
     document.getElementById('fase1').style.backgroundColor = "#87d5f9";
+    document.getElementById('descargarPDF').style.backgroundColor = "gray";
 }
 // DESACTIVAR SECCION 1
 function desactivarSeccion1(){
@@ -85,6 +89,7 @@ function activarSeccion2(){
     desactivarTerminado();
 
     document.getElementById('fase2').style.backgroundColor = "#87d5f9";
+    document.getElementById('descargarPDF').style.backgroundColor = "gray";
 }
 // DESACTIVAR SECCION 2
 function desactivarSeccion2(){
@@ -118,6 +123,7 @@ function activarSeccion3(){
     desactivarTerminado();
 
     document.getElementById('fase3').style.backgroundColor = "#87d5f9";
+    document.getElementById('descargarPDF').style.backgroundColor = "gray";
 }
 // DESACTIVAR SECCION 3
 function desactivarSeccion3(){
@@ -148,6 +154,7 @@ function activarSeccion4(){
     desactivarTerminado();
 
     document.getElementById('fase4').style.backgroundColor = "#87d5f9";
+    document.getElementById('descargarPDF').style.backgroundColor = "gray";
 }
 // DESACTIVAR SECCION 4
 function desactivarSeccion4(){
@@ -180,6 +187,7 @@ function activarSeccion5(){
     desactivarTerminado();
 
     document.getElementById('fase5').style.backgroundColor = "#87d5f9";
+    document.getElementById('descargarPDF').style.backgroundColor = "gray";
 }
 // DESACTIVAR SECCION 5
 function desactivarSeccion5(){
@@ -235,8 +243,12 @@ function activarSecciones(){
     document.querySelector('#agregar_info-Estructura').style.visibility = "hidden";
     document.querySelector('#agregar_info-Excedentes').style.visibility = "hidden";
     document.querySelector('#agregar_info-Fuentes').style.visibility = "hidden";
+
+    document.getElementById('descargarPDF').style.backgroundColor = "#87d5f9";
+    document.getElementById('descargarPDF').disabled = false;
 }
 
 function desactivarTerminado(){
     document.getElementById('terminado').style.backgroundColor = "gray";
+    document.getElementById('descargarPDF').disabled = true;
 }
