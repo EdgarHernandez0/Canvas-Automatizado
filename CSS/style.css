@@ -29,6 +29,16 @@ header{
 
     /*outline: 2px solid black;*/
 }
+
+@media (max-width: 600px){
+    .contenedor{
+        max-width: 90rem;
+        width: 90%;
+        height: 200rem;
+        margin: 0 auto;
+    }
+}
+
 h1, h2{
     font-size: 13px;
     text-transform: uppercase;
@@ -95,6 +105,7 @@ img{
     height: 5rem;
     margin: 0 auto;
 }
+
 .flex--botones{
     display: flex;
     justify-content: space-evenly;
@@ -113,6 +124,25 @@ img{
 .btn--etapa:hover{
     cursor: pointer;
 }
+
+@media (max-width: 600px){
+    .contenedorBotones{
+        max-width: 60rem;
+        width: 80%;
+        height: 5rem;
+        margin: 0 auto;
+    }
+    .flex--botones{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 4rem auto 3rem auto;
+    }
+    .btn--etapa{
+        font-size: 11px;
+        padding: 10px 15px;
+    }
+}
     
 /* GRID CANVA */
 .canva{
@@ -128,6 +158,30 @@ img{
     gap: 1rem;
     margin-bottom: 3rem;
 }
+
+    @media (max-width: 600px){
+        .canva{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(14, 1fr);
+
+            grid-template-areas: "a"
+                                "b"
+                                "c"
+                                "d"
+                                "e"
+                                "f"
+                                "g"
+                                "h"
+                                "i"
+                                "j"
+                                "k"
+                                "l"
+                                "m"
+                                "n";
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+    }
 
 .elemento1{ grid-area: a; }
 .elemento2{ grid-area: b; }

@@ -7,7 +7,7 @@ function getPDFFileButton () {
       onrendered: function(canvas) {
           var myImage = canvas.toDataURL("image/jpeg,1.0");
           // Adjust width and height
-          var imgWidth = (canvas.width * 47) / 240;
+          var imgWidth = (canvas.width * 40) / 240;
           var imgHeight = (canvas.height * 60) / 240;
           // jspdf changes
           var pdf = new jsPDF('l', 'mm', 'letter');
